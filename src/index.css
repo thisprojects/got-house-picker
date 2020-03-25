@@ -34,6 +34,8 @@ h1 {
   font-family: got;
   padding: 50px;
   margin: 0px;
+  color: white;
+  text-align: center;
 }
 
 .nameForm {
@@ -87,7 +89,20 @@ tr {
   width: 100%;
 }
 
+.fade-in {
+  animation: fadein 1s;
+}
+
+@keyframes fadein{
+  0% {opacity: 0;}
+  100%{opacity: 1;}
+}
+
 @media only screen and (max-width: 500px) {
+  .logo {
+    background: #1c1c1c;
+    height: 120px;
+  }
   h1 {
     font-size: 1em;
   }
